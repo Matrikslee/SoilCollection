@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">土壤采集系统</string>
+
+    <string name="data_query">数据查询</string>
+    <string name="sampling_settings">采样设置</string>
+
+    <string name="about_title">关于</string>
+    <string name="about_text">中国海洋大学\n工程学院 自动化及测控系\n土壤采集系统 Version 0.1</string>
+
+    <string name="navigation_drawer_open">打开侧边栏</string>
+    <string name="navigation_drawer_close">关闭侧边栏</string>
+
+    <string name="record_number">编号</string>
+    <string name="collect_timedate">采集时间</string>
+    <string name="water_content">含水量</string>
+    <string name="conductivity">导电率</string>
+    <string name="temperature">温度</string>
+</resources>
