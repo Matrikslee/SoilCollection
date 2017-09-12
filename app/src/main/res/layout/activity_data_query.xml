@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/darker_gray"
     tools:context="cn.edu.ouc.eng.soilcollection.dataQueryActivity">
 
     <TableLayout
+        android:layout_weight="1"
         android:id="@+id/collection_table"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorTableTitle"
         android:orientation="vertical">
         <TableRow
             android:id="@+id/row_start"
@@ -27,7 +28,8 @@
                     android:gravity="center"
                     android:text="@string/record_number"
                     android:textColor="@android:color/black"/>
-                <TextView android:id="@+id/history_display_date"
+                <TextView
+                    android:id="@+id/history_display_date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -66,30 +68,36 @@
     </TableLayout>
 
     <LinearLayout
-        android:id="@+id/groupQueryButtons"
+        android:id="@+id/viewsQueryBegin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
-        <Button
-            android:id="@+id/btnQueryData"
+        <TextView
+            android:id="@+id/txtBeginQueryDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.1"
-            android:text="查询" />
-        <Button
-            android:id="@+id/btnSaveData"
+            android:layout_weight="0.6"
+            android:onClick="setTxtBeginQueryDate"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/datetime_size" />
+
+        <TextView
+            android:id="@+id/txtBeginQueryTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.1"
-            android:text="存储" />
+            android:layout_weight="0.4"
+            android:onClick="setTxtBeginQueryTime"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/datetime_size" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/viewsQueryEnd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/groupQueryButtons"
         android:orientation="horizontal"
         android:paddingBottom="10dp"
         android:paddingLeft="20dp"
@@ -116,30 +124,22 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/viewsQueryBegin"
+        android:id="@+id/groupQueryButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/viewsQueryEnd"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:layout_alignParentBottom="true">
 
-        <TextView
-            android:id="@+id/txtBeginQueryDate"
+        <Button
+            android:id="@+id/btnQueryData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
-            android:onClick="setTxtBeginQueryDate"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/datetime_size" />
-
-        <TextView
-            android:id="@+id/txtBeginQueryTime"
+            android:layout_weight="0.1"
+            android:text="查询" />
+        <Button
+            android:id="@+id/btnSaveData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.4"
-            android:onClick="setTxtBeginQueryTime"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/datetime_size" />
+            android:layout_weight="0.1"
+            android:text="存储" />
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

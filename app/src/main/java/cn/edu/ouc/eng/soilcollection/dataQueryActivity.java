@@ -59,7 +59,6 @@ public class dataQueryActivity extends AppCompatActivity {
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
                         txtBeginQueryDate.setText(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
-
                     }
                 }, mYear, mMonth, mDay);
         datePickerDialog.show();
@@ -95,7 +94,6 @@ public class dataQueryActivity extends AppCompatActivity {
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
                         txtEndQueryDate.setText(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
-
                     }
                 }, mYear, mMonth, mDay);
         datePickerDialog.show();

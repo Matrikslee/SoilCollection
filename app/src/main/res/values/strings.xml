@@ -15,4 +15,16 @@
     <string name="water_content">含水量</string>
     <string name="conductivity">导电率</string>
     <string name="temperature">温度</string>
+    
+    <string name="perio_sampling">周期采样</string>
+    <string name="point_sampling">定时采样</string>
+
+    <string name="time">时间</string>
+    <string name="date">日期</string>
+
+    <string name="select_all">全选</string>
+    <string name="add">添加</string>
+    <string name="del">删除</string>
+    <string name="cancle">取消</string>
+    <string name="ok">确定</string>
 </resources>
