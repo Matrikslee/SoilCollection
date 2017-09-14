@@ -15,8 +15,6 @@ import android.widget.TimePicker;
 import java.util.Calendar;
 import java.util.Date;
 
-import static cn.edu.ouc.eng.soilcollection.R.string.date;
-
 public class samplingSettingsActivity extends AppCompatActivity {
     private static boolean mode = false;
 
